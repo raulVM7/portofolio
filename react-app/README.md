@@ -1,16 +1,92 @@
-# React + Vite
+# Personal Portfolio — Vasile Raul
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+My personal portfolio website, built from scratch with React. It presents who I am, the websites I've built for local businesses, and how to get in touch.
 
-Currently, two official plugins are available:
+**Live:** https://raulvm7.github.io/portofolio/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## About
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+I'm a Computer Science student in Craiova, Romania. I build and maintain websites for local businesses — cafés, restaurants and gyms — handling design, front-end, hosting, and the fixes that come after launch. I work in HTML, CSS, JavaScript and React, and I'm available for freelance projects.
 
-## Expanding the Oxlint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Tech stack
+
+- **React** — component-based UI
+- **Vite** — build tool and dev server
+- **JavaScript (ES6+)**
+- **CSS** — custom styling, responsive design, CSS variables
+- **GitHub Pages** — hosting
+
+---
+
+## Features
+
+- Responsive layout that works on desktop, tablet and mobile
+- Mobile navigation with a hamburger dropdown menu
+- Projects section built from reusable components, with a click-to-enlarge image modal
+- Dark, minimal design with a warm accent color
+- Real, live project links
+
+---
+
+## Projects featured
+
+- **Brew Haven** — presentation site for a coffee shop, with menu and schedule
+- **Raul's Pizza** — pizzeria site with menu and direct order button
+- **Gym Power** — landing page for a strength gym, with pricing and schedule
+
+---
+
+## Running locally
+
+Clone the repository and install dependencies:
+
+```bash
+git clone https://github.com/raulVM7/portofolio.git
+cd portofolio
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+Build for production:
+
+```bash
+npm run build
+```
+
+Deploy to GitHub Pages:
+
+```bash
+npm run deploy
+```
+
+---
+
+## Project structure
+
+```
+src/
+  App.jsx          — main component, assembles the sections
+  navbar.jsx       — navigation bar with mobile menu
+  hero.jsx         — intro section
+  projects.jsx     — projects grid + card + image modal
+  skills.jsx       — tech stack tags
+  contact.jsx      — contact links
+  index.css        — global styles and design tokens
+```
+
+---
+
+## Contact
+
+- **Email:** raulvasile124@gmail.com
+- **GitHub:** [raulVM7](https://github.com/raulVM7)
+- **Location:** Craiova, Romania

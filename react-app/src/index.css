@@ -1,0 +1,350 @@
+:root {
+  --bg: #0f0e0c;
+  --bg-2: #161412;
+  --card: #1b1917;
+  --border: #221f1c;
+
+  --text: #e8e6e3;
+  --text-2: #c9c5bf;
+  --text-muted: #a8a29a;
+  --text-faint: #6f6a63;
+
+  --accent: #e0523f;
+  --accent-2: #e8622c;
+
+  --border: #221f1c;        /* între secțiuni */
+  --border-card: #262320;   /* carduri/screenshot */
+  --border-tag: #2a2724;   
+}
+
+
+body{
+    background-color: var(--bg);
+    font-family: Inter, system-ui, sans-serif;
+}
+
+
+
+.navbar{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   margin: 25px;
+    color: var(--text);
+    margin-top: 20px;
+}
+.navbar h1{
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+.nav-btns a{
+    text-decoration: none;
+    outline: none;
+    color: var(--text-faint);
+    font-weight: bold;
+    font-size: 0.9rem;
+    
+    
+    cursor: pointer;
+    padding: 10px;
+   
+}
+.nav-btns{
+    margin-top: 13px;
+}
+.nav-btns a:hover{
+    color: #88837a;
+}
+
+.menu-btn{
+    color: var(--text);
+    display: none;
+    background: none;
+    border: none;
+    color: var(--text);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+
+.hero
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1050px;    /* în loc de margin-left/right: 25rem */
+    margin: 5rem auto 0;  /* centrat, cu spațiu sus */
+    padding: 30px;
+    flex-direction: row;
+    gap: 4rem;
+    
+    
+}
+
+
+.hero-big h1{
+    font-size: 4rem;
+    color: var(--text);
+}
+.hero-desc{
+    font-size: 1.5rem;
+    max-width: 30rem;
+    font-weight: bold;
+    color: var(--text-muted);
+    margin-top: -10px;
+}
+.hero-btn{
+    margin-top: 30px;
+    border-radius: 5px;
+    color: black;
+    background-color: var(--accent);
+    border: none;
+    padding: 15px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.1s ease;
+}   
+.hero-btn:hover{
+    background-color: var(--accent-2);
+}
+.about{
+    max-width: 25rem;
+    
+   
+    padding-top: 50px;
+}
+.about-title{
+    color:var(--text-faint);
+    margin-bottom: 30px;
+}
+.about-desc{
+    color: var(--text-2);
+    margin-bottom: 30px;
+}
+.about-subdesc{
+    color: var(--text-muted);
+    
+}
+
+.projects{
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 56px 0;
+    border-top: 1px solid var(--border);
+    margin-top: 100px;
+    display: flex;
+    gap: 7rem;
+    
+}
+.project-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  
+}
+.projects-card {
+  
+  
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+.pTitle {
+    color: var(--text-faint);
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+}
+.project-desc{
+    font-size: 0.9rem;
+}
+.project-links a{
+    color: var(--text-muted);
+    text-decoration: none;
+    padding-right: 10px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.project-links a:hover{
+    color: var(--accent);
+}
+.project-title{
+    color: var(--text);
+    font-size: 1.1rem
+}
+.project-desc{
+    color: var(--text-faint);
+}
+.project-img{
+    width: 100%;
+    aspect-ratio: 16/10;
+    border: 2px solid var(--border-card);
+    border-radius: 10px;
+    object-fit: cover;
+    cursor: pointer;
+}
+.modal {
+  position: fixed;
+  inset: 0;                          /* acoperă tot ecranul */
+  background: rgba(0, 0, 0, 0.85);   /* fundal întunecat semi-transparent */
+  display: flex;
+  align-items: center;               /* centrează poza */
+  justify-content: center;
+  z-index: 1000;                     /* deasupra a tot */
+  cursor: pointer;
+}
+.modal-img {
+  max-width: 90%;                    /* poza mare, dar nu lipită de margini */
+  max-height: 90%;
+  border-radius: 8px;
+}
+
+.skill-list{
+   max-width: 1050px;
+   margin: 0 auto;
+   border-top: 1px solid var(--border);
+   display: flex;
+   padding: 57px 0;
+   color: var(--text-faint); 
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.skill-title{
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+    margin-right: 9rem;
+}
+
+.skill-tag{
+    color: var(--text-2);
+    font-size: 13px;
+    border: 1px solid var(--border-tag);
+    padding: 10px 13px;
+    border-radius: 2px;
+    cursor: pointer;
+    
+}
+.skill-tag:hover{
+    background-color: var(--bg-2);
+}
+.contact{
+    max-width: 1050px;
+    margin: 0 auto;
+   border-top: 1px solid var(--border);
+   display: flex;
+   padding: 57px 0;
+   color: var(--text-faint); 
+   gap: 9rem;
+}
+.contact-title{
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+    
+}
+.contact-links{
+    display: flex;
+    flex-direction: column;
+    
+}
+.email{
+    color: var(--accent);
+    font-size: 1.8rem;
+    text-decoration: none;
+    
+}
+.contact-btn{
+    display: block;
+    width: fit-content;
+    margin-top: 20px;
+    color: var(--text-muted);
+    text-decoration: none;
+    padding-right: 10px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.contact-btn:hover{
+    color: var(--accent);
+}
+
+.footer{
+    max-width: 1050px;
+    margin: 0 auto;
+   border-top: 1px solid var(--border);
+   display: flex;
+   padding: 20px 0;
+   justify-content: space-between;
+   color: var(--text-faint);
+   font-size: 0.8rem;
+}
+
+
+
+@media (max-width: 768px) {
+        .hero{
+            flex-direction: column;
+            margin: auto;
+            
+            
+        }
+        .menu-btn{
+            display: block;
+        }
+        .nav-btns{
+            display: none;
+        }
+        .navbar{
+            position: relative;
+            margin: 1rem;
+        }
+       
+        .nav-btns.open{
+           display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        position: absolute;      
+        top: 100%;               
+        
+        background-color: var(--bg-2);   
+        border-radius: 8px;
+        z-index: 100;
+        width: 100%;
+       
+        }
+        .project-grid{
+            grid-template-columns: 1fr;
+           
+        }
+        .projects-card{
+            margin: auto;
+            padding: 0;
+            
+        }
+        .projects{
+            display: flex;
+            flex-direction: column;
+        }
+            
+        .contact{
+            flex-direction: column;
+                  
+        }
+        .email{
+            font-size: 1rem;
+        }
+        
+        
+        .footer{
+            flex-direction: column;
+        }
+            
+        
+        
+        .skill-title{
+            margin-right: 2rem;
+        }
+        
+       
+        
+        
+}   

@@ -1,8 +1,8 @@
 import React, {useState} from "react";
 import pizzerie from "./assets/pizzerie.png";
 import cafenea from "./assets/cafenea.png";
-import sala from "./assets/sala.png"
-
+import sala from "./assets/sala.png";
+import cofetarie from "./assets/cofetarie.png";
 
 
 
@@ -16,6 +16,16 @@ const project = [
     github: "https://github.com/raulVM7/Coffee-Website"
     
   },
+
+  {
+    nume: "Amandine Cofetarie",
+    desc: "Site de prezentare pentru o cofetarie, cu meniu și program.",
+    poza: cofetarie,
+    live: "https://amandinecofetarie.netlify.app/",
+    github: "https://github.com/raulVM7/Amandine-Cofetarie"
+    
+  },
+
   {
     nume: "Raul's Pizza",
     desc: "Site de pizzerie cu meniu și buton de comandă directă.",

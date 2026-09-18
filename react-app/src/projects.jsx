@@ -1,9 +1,10 @@
 import React, {useState} from "react";
-import pizzerie from "./assets/pizzerie.png";
-import cafenea from "./assets/cafenea.png";
-import sala from "./assets/sala.png";
-import cofetarie from "./assets/cofetarie.png";
-import salon from "./assets/salon.png";
+import pizzerie from "./assets/pizzerie.webp";
+import cafenea from "./assets/cafenea.webp";
+import sala from "./assets/sala.webp";
+import cofetarie from "./assets/cofetarie.webp";
+import salon from "./assets/salon.webp";
+import graffiti from "./assets/graffiti.webp";
 
 
  
@@ -17,13 +18,13 @@ const project = [
     
   },
   {
-  nume: "Odette Salon",
+    nume: "Odette Salon",
     desc: "Showcase website for a beauty salon, featuring a price list, gallery, and appointment booking button.",
     poza: salon,
-    live: "https://caffebrew.netlify.app/",
-    github: "https://github.com/raulVM7/Coffee-Website"
-
+    live: "https://odette-salon.netlify.app/",
+    github: "https://github.com/raulVM7/Salon-Odette"
   },
+  
   {
     nume: "Amandine Cofetarie",
     desc: "Showcase website for a confectionery, featuring the menu and opening hours.",
@@ -86,8 +87,10 @@ function ProjectCard({ project, setPozaMarita }){
                 <h3 className="project-title">{project.nume}</h3>
                 <p className="project-desc">{project.desc}</p>
                 <div className="project-links">
-        <a href={project.live} target="_blank">Live</a>
-        <a href={project.github} target="_blank">GitHub</a>
+        <a href={project.live} target="_blank" rel="noopener">Live</a>
+        {project.github && (
+          <a href={project.github} target="_blank" rel="noopener">GitHub</a>
+        )}
       </div>
         </div>
     </>

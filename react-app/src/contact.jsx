@@ -11,7 +11,7 @@ function Contact(){
     
     <div className="footer">
             <p>Craiova, România</p>
-            <p>Disponibil pentru proiecte freelance</p>
+            <p>Available for freelance projects</p>
             </div>
     </>
 }

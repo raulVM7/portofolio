@@ -3,23 +3,30 @@ import pizzerie from "./assets/pizzerie.png";
 import cafenea from "./assets/cafenea.png";
 import sala from "./assets/sala.png";
 import cofetarie from "./assets/cofetarie.png";
-
+import salon from "./assets/salon.png";
 
 
  
 const project = [
   {
     nume: "Brew Haven",
-    desc: "Site de prezentare pentru o cafenea, cu meniu și program.",
+    desc: "Presentation website for a coffee shop, featuring the menu and opening hours.",
     poza: cafenea,
     live: "https://caffebrew.netlify.app/",
     github: "https://github.com/raulVM7/Coffee-Website"
     
   },
+  {
+  nume: "Odette Salon",
+    desc: "Showcase website for a beauty salon, featuring a price list, gallery, and appointment booking button.",
+    poza: salon,
+    live: "https://caffebrew.netlify.app/",
+    github: "https://github.com/raulVM7/Coffee-Website"
 
+  },
   {
     nume: "Amandine Cofetarie",
-    desc: "Site de prezentare pentru o cofetarie, cu meniu și program.",
+    desc: "Showcase website for a confectionery, featuring the menu and opening hours.",
     poza: cofetarie,
     live: "https://amandinecofetarie.netlify.app/",
     github: "https://github.com/raulVM7/Amandine-Cofetarie"
@@ -28,14 +35,14 @@ const project = [
 
   {
     nume: "Raul's Pizza",
-    desc: "Site de pizzerie cu meniu și buton de comandă directă.",
+    desc: "Pizzeria website with a menu and a direct order button.",
     poza: pizzerie,
     live: "https://raulspizza.netlify.app/",
     github: "https://github.com/raulVM7/Pizza-Restaurant"
   },
   {
     nume: "Gym Power",
-    desc: "Landing page pentru o sală de forță, cu prețuri și orar.",
+    desc: "Landing page for a gym, featuring prices and opening hours.",
     poza: sala,
     live: "https://gympowerstudio.netlify.app/",
     github: "https://github.com/raulVM7/Fitness-Page-Forge-Studio"

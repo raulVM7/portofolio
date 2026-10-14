@@ -5,7 +5,7 @@ import sala from "./assets/sala.webp";
 import cofetarie from "./assets/cofetarie.webp";
 import salon from "./assets/salon.webp";
 import graffiti from "./assets/graffiti.webp";
-import barbershop from "./assets/barbershop.webp"
+import barbershop from "./assets/barbeshop.webp"
 
  
 const project = [

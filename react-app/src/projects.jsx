@@ -5,7 +5,7 @@ import sala from "./assets/sala.webp";
 import cofetarie from "./assets/cofetarie.webp";
 import salon from "./assets/salon.webp";
 import graffiti from "./assets/graffiti.webp";
-
+import barbershop from "./assets/barbershop.webp"
 
  
 const project = [
@@ -31,6 +31,15 @@ const project = [
     poza: cofetarie,
     live: "https://amandinecofetarie.netlify.app/",
     github: "https://github.com/raulVM7/Amandine-Cofetarie"
+    
+  },
+
+   {
+    nume: "Brici Barbershop",
+    desc: "Presentation of a website for barbershop with a price list, gallery, appointment button and staff showcase.",
+    poza: barbershop,
+    live: "https://brici-barbershop.netlify.app/",
+    github: "https://github.com/raulVM7/Brici-Barbershop"
     
   },
 

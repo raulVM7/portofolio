@@ -36,7 +36,7 @@ const project = [
 
    {
     nume: "Brici Barbershop",
-    desc: "Presentation of a website for barbershop with a price list, gallery, appointment button and staff showcase.",
+    desc: "Presentation of a website for barbershop with  price list, gallery, appointment button and staff showcase.",
     poza: barbershop,
     live: "https://brici-barbershop.netlify.app/",
     github: "https://github.com/raulVM7/Brici-Barbershop"
